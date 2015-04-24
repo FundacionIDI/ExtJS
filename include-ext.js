@@ -46,7 +46,7 @@
         neptune = (theme === 'neptune'),
         repoDevMode = getCookieValue('ExtRepoDevMode'),
         suffix = [],
-        i = 3,
+        i = 1,
         neptunePath;
 
     rtl = rtl && rtl.toString() === 'true'
@@ -54,7 +54,7 @@
     while (i--) {
         path = path.substring(0, path.lastIndexOf('/'));
     }
-    path+='/js/Ext';
+    //path+='/js/Ext';
     if (theme && theme !== 'classic') {
         suffix.push(theme);
     }
